@@ -10,7 +10,8 @@ namespace Ejercicio03
     {
         static void Main(string[] args)
         {
-            int a, b, int mayor;
+            int a, b;
+            string mayor;
             Console.Write("Ingrese el primer número entero: ");
             a = int.Parse(Console.ReadLine());
             Console.Write("Ingrese el segundo número entero: ");
@@ -19,12 +20,14 @@ namespace Ejercicio03
             Console.WriteLine(mayor);
         }
 
-        private static int calcular_mayor(int a, int b)
+        private static string calcular_mayor(int a, int b)
         {
             if (a > b)
-                return a;
+                return "El mayor es: " + a;
+            else if (b > a)
+                return "El mayor es: " + b;
             else
-                return b;
+                return "Son iguales";
         }
     }
 }

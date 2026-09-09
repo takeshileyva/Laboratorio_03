@@ -20,7 +20,7 @@ namespace Ejercicio01
             Console.WriteLine($"El área del triángulo es: {a:F2}");
         }
 
-        static double calcular_area(double b, double h)
+        private static double calcular_area(double b, double h)
         {
             double res = (b * h) / 2;
             return res;
